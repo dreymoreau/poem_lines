@@ -2,7 +2,9 @@ import React from 'react'
 
 const Data = () => {
   return (
-    <div>Data</div>
+    <div>
+      <img src="../assets/bg-flower.avif" alt="flowers"/>
+    </div>
   )
 }
 
