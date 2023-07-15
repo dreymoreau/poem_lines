@@ -11,7 +11,6 @@ const Nav = () => {
         // passing in the function to switch it to false when the About li is clicked
         // redirect to About page and hide navbar
         setUpdateNav(false)
-        setRemoveGetData(false)
     }
     
   return (
