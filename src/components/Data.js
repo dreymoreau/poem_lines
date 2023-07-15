@@ -1,12 +1,19 @@
 import { useState }from 'react'
 import axios from 'axios'
+import Nav from './Nav'
 
 const SendData = () => {
 
   const[data, setData] = useState('')
   const [results, setResults] = useState(null)
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(null)
+  const [removeInput, setRemoveInput] = useState(true)
 
+  const linkTo = (e) => {
+    // passing in the function to switch it to false when the About li is clicked
+    // redirect to About page and hide navbar
+    setRemoveInput(false)
+}
 
 const options = {
   method: 'POST',
@@ -54,13 +61,13 @@ const handleData = (e) => {
   return(
     <div>
         <div>
-         <form action="submit" onSubmit={handleData}>
+         <form className="mt-10"action="submit" onSubmit={handleData}>
                 <label id="text"></label>
-               <input type='text' placeholder="generate a poem about....." required/>
-              <button type='submit'>Get Poem!</button>
+               <input type='text' placeholder="generate a poem about..." className="border-2 border-black border-solid ml-3 p-1 rounded" required/>
+              <button className="border-2 border-black border-solid bg-slate-200 ml-3 p-1 rounded hover:bg-red-100 cursor-pointer; "type='submit'>Get Poem!</button>
         </form>
         </div>
-        <div>
+        <div className="flex w-96 justify-center bg-green-300">
             {results && <div>
                 <p>{data}</p>
                 </div>}
