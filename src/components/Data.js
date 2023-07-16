@@ -26,15 +26,20 @@ const options = {
   data: {
     model: 'command',
     temperature: 0.9,
-    max_tokens: 300,
+    max_tokens: 200,
     return_likelihoods: 'NONE',
+    k: 0,
+    stop_sequences: [],
     truncate: 'END',
-    prompt: ` f"""
-    These prompts will allow the user to get a 4 line poem back about the inputted subject
+    prompt: `f"""
+    These prompts will allow the user to generate the writing they want
     ex:
 
-    Prompt: Generate a zhort poem about life
-    Output: 
+    Prompt: Generate a short poem about life
+    Output: life is short
+    life is long
+    keep going 
+    
     `
   }
 };
