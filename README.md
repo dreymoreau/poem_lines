@@ -1,6 +1,6 @@
 # Using Cohere's Generate AI model!
 
-Link: https://gennnn-cohere-ai-model.netlify.app/
+Link: https://cohere-appppp.netlify.app/
 
 In progress!
 
