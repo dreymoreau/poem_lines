@@ -5,7 +5,7 @@ import { useState } from 'react'
 const Nav = () => {
     
     const [updateNav, setUpdateNav] = useState(true)
-    const [removeGetData, setRemoveGetData] = useState(true)
+    // const [removeGetData, setRemoveGetData] = useState(true)
     
     const linkTo = (e) => {
         // passing in the function to switch it to false when the About li is clicked

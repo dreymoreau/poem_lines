@@ -1,19 +1,19 @@
 import { useState }from 'react'
 import axios from 'axios'
-import Nav from './Nav'
+// import Nav from './Nav'
 
 const SendData = () => {
 
   const[data, setData] = useState('')
   const [results, setResults] = useState(null)
   const [error, setError] = useState(null)
-  const [removeInput, setRemoveInput] = useState(true)
+  // const [removeInput, setRemoveInput] = useState(true)
 
-  const linkTo = (e) => {
-    // passing in the function to switch it to false when the About li is clicked
-    // redirect to About page and hide navbar
-    setRemoveInput(false)
-}
+//   const linkTo = (e) => {
+//     // passing in the function to switch it to false when the About li is clicked
+//     // redirect to About page and hide navbar
+//     setRemoveInput(false)
+// }
 
 const options = {
   method: 'POST',
