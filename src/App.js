@@ -9,12 +9,15 @@ function App() {
   return (
     <Router>
     <div className="App">
-        <Nav />
+      <Routes>
+        <Route path="/" element={<Nav />} />
+        </Routes>
         <Routes>
           <Route path="/about" element={<About />} />
         </Routes>
-        <Data />
-        {/* <GetData /> */}
+        <Routes>
+        <Route path="/" element={<Data />} />
+        </Routes>
       </div>
     </Router>
   );

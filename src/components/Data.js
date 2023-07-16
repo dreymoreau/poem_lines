@@ -73,10 +73,8 @@ const handleData = (e) => {
         </form>
         </div>
         <div className="flex w-96 justify-center bg-green-300">
-            {results && <div>
-                <p>{data}</p>
-                </div>}
-                {error && <div>{error}</div>}
+          {error && <div>{error}</div>}
+          {results && <div><p>{data}</p></div>}
         </div>
     </div>
 )}
