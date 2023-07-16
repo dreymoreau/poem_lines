@@ -1,6 +1,5 @@
 import { useState }from 'react'
 import axios from 'axios'
-// import Nav from './Nav'
 
 const SendData = () => {
 
@@ -65,11 +64,11 @@ const handleData = (e) => {
   }
   return(
     <div>
-        <div>
+        <div >
          <form className="mt-10"action="submit" onSubmit={handleData}>
                 <label id="text"></label>
                <input type='text' placeholder="generate a poem about..." className="border-2 border-black border-solid ml-3 p-1 rounded" required/>
-              <button className="border-2 border-black border-solid bg-blue-800 ml-3 p-1 rounded hover:bg-red-100 cursor-pointer; "type='submit'>Get Poem!</button>
+              <button className="border-2 border-black border-solid bg-orange-200 ml-3 p-1 rounded hover:bg-red-300 cursor-pointer; "type='submit'>Get Poem!</button>
         </form>
         </div>
         <div className="flex w-96 justify-center bg-green-300">

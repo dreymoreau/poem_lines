@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import { useState } from 'react'
 
 const Nav = () => {
     
@@ -15,7 +14,7 @@ const Nav = () => {
     
   return (
     <div>
-        <header className='flex flex-row justify-center bg-slate-400 border-b-2 border-black border-solid'>
+        <header className='flex flex-row justify-center bg-slate-400 shadow-md border-b-2 border-black border-solid'>
                 <h1 className="text-4xl p-4">Poem Generator</h1>
         
                 <Link to="/about">
