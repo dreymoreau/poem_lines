@@ -1,5 +1,7 @@
 # Using Cohere's Generate AI model!
 
+This project allows for the user to input a subject matter in the input field and the output will be a poem.
+
 Link: https://cohere-appppp.netlify.app/
 
 # How Its Made 
