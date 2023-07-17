@@ -32,13 +32,10 @@ const options = {
     truncate: 'END',
     prompt: `f"""
     These prompts will allow the user to generate the writing they want
-    ex:
+    example:
 
-    Prompt: Generate a short poem about life
-    Output: life is short
-    life is long
-    keep going 
-    
+    Input: Generate a poem
+    Output:
     `
   }
 };
@@ -71,9 +68,11 @@ const handleData = (e) => {
               <button className="border-2 border-black border-solid bg-orange-200 ml-3 p-1 rounded hover:bg-red-300 cursor-pointer; "type='submit'>Get Poem!</button>
         </form>
         </div>
-        <div className="flex w-96 justify-center bg-green-300">
-          {error && <div>{error}</div>}
-          {results && <div><p>{data}</p></div>}
+        <div className="flex flex-row justify-center ml-23 p-14 mt-7">
+          <div className='bg-green-300 w-68 p-4 border-2 border-black border-solid shadow-md'>
+           {error && <div>{error}</div>}
+           {results && <div><p>{data}</p></div>}
+          </div>
         </div>
     </div>
 )}

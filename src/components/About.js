@@ -14,10 +14,9 @@ const About = () => {
        <h2 className='p-4 text-2xl'>Powered by:</h2> 
        <img src={logo} alt='cohere logo' className="mt-2"/>
        </div>
-
-       <p>Cohere empowers every developer and enterprise to build amazing products and capture true business value with language AI.</p>
+       <p className="p-7">Cohere empowers every developer and enterprise to build amazing products and capture true business value with language AI.</p>
        <Link to="/">
-                    <p className='ml-4 mt-7'>Home</p>
+                    <p className='mt-7'>Home</p>
         </Link>
      </div>
   )
