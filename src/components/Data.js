@@ -1,13 +1,14 @@
 import { useState }from 'react'
 import axios from 'axios'
 
+
 const SendData = () => {
 
   const[data, setData] = useState('')
   const [results, setResults] = useState(null)
   const [error, setError] = useState(null)
   // const [removeInput, setRemoveInput] = useState(true)
-
+  // const [output, setOutput] = useState(null)
 //   const linkTo = (e) => {
 //     // passing in the function to switch it to false when the About li is clicked
 //     // redirect to About page and hide navbar
@@ -31,11 +32,14 @@ const options = {
     stop_sequences: [],
     truncate: 'END',
     prompt: `f"""
-    These prompts will allow the user to generate the writing they want
+    These prompts will allow the user to generate a poem with the topic of their choice
     example:
 
-    Input: Generate a poem
-    Output:
+    Input: Generate 3 line poem
+    Output: 
+    this is a 3 line poem
+    ups and downs
+    rollercoaster ride
     `
   }
 };
@@ -61,15 +65,16 @@ const handleData = (e) => {
   }
   return(
     <div>
-        <div >
+        <div>
          <form className="mt-10"action="submit" onSubmit={handleData}>
                 <label id="text"></label>
                <input type='text' placeholder="generate a poem about..." className="border-2 border-black border-solid ml-3 p-1 rounded" required/>
               <button className="border-2 border-black border-solid bg-orange-200 ml-3 p-1 rounded hover:bg-red-300 cursor-pointer; "type='submit'>Get Poem!</button>
         </form>
         </div>
+       
         <div className="flex flex-row justify-center ml-23 p-14 mt-7">
-          <div className='bg-green-300 w-68 p-4 border-2 border-black border-solid shadow-md'>
+          <div className='bg-green-300'>
            {error && <div>{error}</div>}
            {results && <div><p>{data}</p></div>}
           </div>
