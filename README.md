@@ -1,8 +1,8 @@
-# Using Cohere's Generate AI model!
+# Poem_Lines - Using Cohere's Generate AI model!
 
 This project allows for the user to input a subject matter in the input field and the output will be a poem.
 
-Link: https://cohere-appppp.netlify.app/
+Link: https://poem-lines.netlify.app
 
 # How Its Made 
 Tech used: React, Tailwind CSS and Cohere Generate AI
